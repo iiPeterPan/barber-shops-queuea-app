@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import configureStore from './config/configureStore';
-import { Provider } from 'react-redux';
-import Routes from './Routes';
-import ScrollToTop from './utils/ScrollToTop';
-import './assets/base.scss';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import React, { Component } from "react";
+import { BrowserRouter } from "react-router-dom";
+import configureStore from "./config/configureStore";
+import { Provider } from "react-redux";
+import Routes from "./Routes";
+import ScrollToTop from "./utils/ScrollToTop";
+import "./assets/base.scss";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   fab,
   faFacebook,
@@ -22,8 +22,8 @@ import {
   faDiscord,
   faSlack,
   faDribbble,
-  faGithub
-} from '@fortawesome/free-brands-svg-icons';
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   far,
   faSquare,
@@ -62,8 +62,8 @@ import {
   faFileCode,
   faFileAlt,
   faEye,
-  faChartBar
-} from '@fortawesome/free-regular-svg-icons';
+  faChartBar,
+} from "@fortawesome/free-regular-svg-icons";
 import {
   fas,
   faAngleDoubleRight,
@@ -128,8 +128,8 @@ import {
   faArrowLeft,
   faStar,
   faSignOutAlt,
-  faLink
-} from '@fortawesome/free-solid-svg-icons';
+  faLink,
+} from "@fortawesome/free-solid-svg-icons";
 library.add(
   far,
   faSquare,
@@ -259,7 +259,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <BrowserRouter basename="/carolina-react-admin-dashboard-material-ui-free/">
+        <BrowserRouter basename={"/barber-shops-queuea-app"}>
           <CssBaseline />
           <ScrollToTop>
             <Routes />
