@@ -1,89 +1,89 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { Grid, Card, CardContent, Button, Divider } from '@material-ui/core';
+import { Grid, Card, CardContent, Button, Divider } from "@material-ui/core";
 
-import Chart from 'react-apexcharts';
+import Chart from "react-apexcharts";
 export default function LivePreviewExample() {
   const chart30Options = {
     chart: {
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
-    colors: ['#3c44b1'],
+    colors: ["#3c44b1"],
     stroke: {
-      color: '#4191ff',
-      curve: 'smooth',
-      width: 4
+      color: "#4191ff",
+      curve: "smooth",
+      width: 4,
     },
     xaxis: {
       crosshairs: {
-        width: 1
-      }
+        width: 1,
+      },
     },
     yaxis: {
-      min: 0
+      min: 0,
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart30Data = [
     {
-      name: 'Customers',
-      data: [47, 38, 56, 24, 45, 54, 38, 47, 38, 56, 24, 56, 24, 65]
-    }
+      name: "Customers",
+      data: [47, 38, 56, 24, 45, 54, 38, 47, 38, 56, 24, 56, 24, 65],
+    },
   ];
 
   const chart31Options = {
     chart: {
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
-    colors: ['#f4772e'],
+    colors: ["#f4772e"],
     stroke: {
-      color: '#4191ff',
-      curve: 'smooth',
-      width: 3
+      color: "#4191ff",
+      curve: "smooth",
+      width: 3,
     },
     xaxis: {
       crosshairs: {
-        width: 1
-      }
+        width: 1,
+      },
     },
     yaxis: {
-      min: 0
+      min: 0,
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart31Data = [
     {
-      name: 'Sales',
-      data: [47, 38, 56, 24, 45, 54, 38, 47, 38, 56, 24, 56, 24, 65]
-    }
+      name: "Sales",
+      data: [47, 38, 56, 24, 45, 54, 38, 47, 38, 56, 24, 56, 24, 65],
+    },
   ];
 
   return (
     <Fragment>
-      <Grid container spacing={4}>
-        <Grid item xs={12} sm={6} md={4}>
+      <Grid container spacing={2}>
+        {/* <Grid item xs={12} sm={6} md={4}>
           <Card className="card-box bg-premium-dark border-0 text-light mb-4">
             <CardContent className="p-3">
               <div className="d-flex align-items-start">
@@ -96,7 +96,7 @@ export default function LivePreviewExample() {
                 <div className="ml-auto">
                   <div className="bg-white text-center text-success d-50 rounded-circle d-flex align-items-center justify-content-center">
                     <FontAwesomeIcon
-                      icon={['far', 'chart-bar']}
+                      icon={["far", "chart-bar"]}
                       className="font-size-xl"
                     />
                   </div>
@@ -104,7 +104,7 @@ export default function LivePreviewExample() {
               </div>
               <div className="mt-3">
                 <FontAwesomeIcon
-                  icon={['fas', 'arrow-up']}
+                  icon={["fas", "arrow-up"]}
                   className="text-success mr-1"
                 />
                 <span className="text-success pr-1">15.4%</span>
@@ -112,38 +112,38 @@ export default function LivePreviewExample() {
               </div>
             </CardContent>
           </Card>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} sm={6} md={4}>
           <Card className="card-box bg-midnight-bloom text-light mb-4">
             <CardContent className="p-3">
               <div className="d-flex align-items-start">
                 <div className="font-weight-bold">
                   <small className="text-white-50 d-block mb-1 text-uppercase">
-                    Sales
+                    คิวที่เหลือ
                   </small>
-                  <span className="font-size-xxl mt-1">23,274</span>
+                  <span className="font-size-xxl mt-2">15</span>
                 </div>
                 <div className="ml-auto">
                   <div className="bg-white text-center text-primary d-50 rounded-circle d-flex align-items-center justify-content-center">
                     <FontAwesomeIcon
-                      icon={['far', 'lightbulb']}
+                      icon={["far", "user"]}
                       className="font-size-xl"
                     />
                   </div>
                 </div>
               </div>
               <div className="mt-3">
-                <FontAwesomeIcon
-                  icon={['fas', 'arrow-up']}
+                {/* <FontAwesomeIcon
+                  icon={["fas", "arrow-up"]}
                   className="text-warning mr-1"
                 />
-                <span className="text-warning pr-1">7.4%</span>
-                <span className="text-white-50">same as before</span>
+                <span className="text-warning pr-1">7.4%</span> */}
+                <span className="text-white-50">Fri 6 May</span>
               </div>
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} md={4}>
+        {/* <Grid item xs={12} md={4}>
           <Card className="card-box bg-plum-plate text-light mb-4">
             <CardContent className="p-3">
               <div className="d-flex align-items-start">
@@ -156,7 +156,7 @@ export default function LivePreviewExample() {
                 <div className="ml-auto">
                   <div className="bg-white text-center text-primary d-50 rounded-circle d-flex align-items-center justify-content-center">
                     <FontAwesomeIcon
-                      icon={['far', 'chart-bar']}
+                      icon={["far", "chart-bar"]}
                       className="font-size-xl"
                     />
                   </div>
@@ -164,7 +164,7 @@ export default function LivePreviewExample() {
               </div>
               <div className="mt-3">
                 <FontAwesomeIcon
-                  icon={['fas', 'arrow-down']}
+                  icon={["fas", "arrow-down"]}
                   className="text-white mr-1"
                 />
                 <span className="text-white px-1">15.4%</span>
@@ -172,9 +172,9 @@ export default function LivePreviewExample() {
               </div>
             </CardContent>
           </Card>
-        </Grid>
+        </Grid> */}
       </Grid>
-      <Grid container spacing={4}>
+      {/* <Grid container spacing={4}>
         <Grid item xs={12} lg={6}>
           <Card className="card-box mb-4">
             <CardContent className="p-0">
@@ -319,7 +319,7 @@ export default function LivePreviewExample() {
             </div>
           </Card>
         </Grid>
-      </Grid>
+      </Grid> */}
     </Fragment>
   );
 }

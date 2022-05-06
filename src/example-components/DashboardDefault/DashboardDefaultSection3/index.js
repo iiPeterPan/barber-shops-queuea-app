@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
   Grid,
@@ -12,59 +12,59 @@ import {
   List,
   ListItem,
   Tooltip,
-  Divider
-} from '@material-ui/core';
+  Divider,
+} from "@material-ui/core";
 
-import AddCircleTwoToneIcon from '@material-ui/icons/AddCircleTwoTone';
+import AddCircleTwoToneIcon from "@material-ui/icons/AddCircleTwoTone";
 
-import avatar1 from '../../../assets/images/avatars/avatar1.jpg';
-import avatar2 from '../../../assets/images/avatars/avatar2.jpg';
-import avatar3 from '../../../assets/images/avatars/avatar3.jpg';
-import avatar4 from '../../../assets/images/avatars/avatar4.jpg';
-import avatar5 from '../../../assets/images/avatars/avatar5.jpg';
-import avatar6 from '../../../assets/images/avatars/avatar6.jpg';
-import avatar7 from '../../../assets/images/avatars/avatar7.jpg';
+import avatar1 from "../../../assets/images/avatars/avatar1.jpg";
+import avatar2 from "../../../assets/images/avatars/avatar2.jpg";
+import avatar3 from "../../../assets/images/avatars/avatar3.jpg";
+import avatar4 from "../../../assets/images/avatars/avatar4.jpg";
+import avatar5 from "../../../assets/images/avatars/avatar5.jpg";
+import avatar6 from "../../../assets/images/avatars/avatar6.jpg";
+import avatar7 from "../../../assets/images/avatars/avatar7.jpg";
 
-import Chart from 'react-apexcharts';
+import Chart from "react-apexcharts";
 export default function LivePreviewExample() {
   const chart53Options = {
     chart: {
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     stroke: {
-      color: '#4191ff',
-      curve: 'smooth',
-      width: 2
+      color: "#4191ff",
+      curve: "smooth",
+      width: 2,
     },
     fill: {
-      color: '#f4772e'
+      color: "#f4772e",
     },
-    colors: ['#f4772e'],
+    colors: ["#f4772e"],
     legend: {
-      show: false
+      show: false,
     },
     xaxis: {
       crosshairs: {
-        width: 1
-      }
+        width: 1,
+      },
     },
     yaxis: {
-      min: 0
-    }
+      min: 0,
+    },
   };
   const chart53Data = [
     {
-      name: 'Sales',
-      data: [32, 52, 45, 32, 54, 56, 28, 25, 36, 62]
-    }
+      name: "Sales",
+      data: [32, 52, 45, 32, 54, 56, 28, 25, 36, 62],
+    },
   ];
   return (
     <Fragment>
@@ -90,7 +90,7 @@ export default function LivePreviewExample() {
             <div className="font-weight-bold mt-1">Marion Devine</div>
             <div className="font-weight-bold font-size-sm text-black-50">
               <FontAwesomeIcon
-                icon={['fas', 'star']}
+                icon={["fas", "star"]}
                 className="text-warning mr-1"
               />
               <span>4.8</span>
@@ -110,7 +110,7 @@ export default function LivePreviewExample() {
             <div className="font-weight-bold mt-1">Monique Hanna</div>
             <div className="font-weight-bold font-size-sm text-black-50">
               <FontAwesomeIcon
-                icon={['fas', 'star']}
+                icon={["fas", "star"]}
                 className="text-warning mr-1"
               />
               <span>5.0</span>
@@ -118,7 +118,7 @@ export default function LivePreviewExample() {
               81 Jobs
             </div>
           </div>
-          <div className="position-relative px-5 py-3">
+          {/* <div className="position-relative px-5 py-3">
             <div className="divider-v divider-v-lg" />
             <div className="avatar-icon-wrapper rounded-circle d-80 mx-auto">
               <div className="d-block p-0 avatar-icon-wrapper rounded-circle m-0">
@@ -130,15 +130,15 @@ export default function LivePreviewExample() {
             <div className="font-weight-bold mt-1">Celine Goulding</div>
             <div className="font-weight-bold font-size-sm text-black-50">
               <FontAwesomeIcon
-                icon={['fas', 'star']}
+                icon={["fas", "star"]}
                 className="text-warning mr-1"
               />
               <span>2.9</span>
               <span className="px-1">|</span>
               52 Jobs
             </div>
-          </div>
-          <div className="position-relative px-5 py-3">
+          </div> */}
+          {/* <div className="position-relative px-5 py-3">
             <div className="divider-v divider-v-lg" />
             <div className="avatar-icon-wrapper rounded-circle d-80 mx-auto">
               <div className="d-block p-0 avatar-icon-wrapper rounded-circle m-0">
@@ -150,15 +150,15 @@ export default function LivePreviewExample() {
             <div className="font-weight-bold mt-1">Anabel Mayo</div>
             <div className="font-weight-bold font-size-sm text-black-50">
               <FontAwesomeIcon
-                icon={['fas', 'star']}
+                icon={["fas", "star"]}
                 className="text-warning mr-1"
               />
               <span>4.6</span>
               <span className="px-1">|</span>
               76 Jobs
             </div>
-          </div>
-          <div className="position-relative px-5 py-3">
+          </div> */}
+          {/* <div className="position-relative px-5 py-3">
             <div className="divider-v divider-v-lg" />
             <div className="avatar-icon-wrapper rounded-circle d-80 mx-auto">
               <div className="d-block p-0 avatar-icon-wrapper rounded-circle m-0">
@@ -170,15 +170,15 @@ export default function LivePreviewExample() {
             <div className="font-weight-bold mt-1">Rueben Hays</div>
             <div className="font-weight-bold font-size-sm text-black-50">
               <FontAwesomeIcon
-                icon={['fas', 'star']}
+                icon={["fas", "star"]}
                 className="text-warning mr-1"
               />
               <span>4.8</span>
               <span className="px-1">|</span>
               76 Jobs
             </div>
-          </div>
-          <div className="position-relative px-5 py-3">
+          </div> */}
+          {/* <div className="position-relative px-5 py-3">
             <div className="divider-v divider-v-lg" />
             <div className="avatar-icon-wrapper rounded-circle d-80 mx-auto">
               <div className="d-block p-0 avatar-icon-wrapper rounded-circle m-0">
@@ -190,15 +190,15 @@ export default function LivePreviewExample() {
             <div className="font-weight-bold mt-1">Kush Malone</div>
             <div className="font-weight-bold font-size-sm text-black-50">
               <FontAwesomeIcon
-                icon={['fas', 'star']}
+                icon={["fas", "star"]}
                 className="text-warning mr-1"
               />
               <span>3.5</span>
               <span className="px-1">|</span>
               34 Jobs
             </div>
-          </div>
-          <div className="position-relative px-5 py-3">
+          </div> */}
+          {/* <div className="position-relative px-5 py-3">
             <div className="avatar-icon-wrapper rounded-circle d-80 mx-auto">
               <div className="d-block p-0 avatar-icon-wrapper rounded-circle m-0">
                 <div className="rounded-circle overflow-hidden">
@@ -209,17 +209,17 @@ export default function LivePreviewExample() {
             <div className="font-weight-bold mt-1">Haydn Porter</div>
             <div className="font-weight-bold font-size-sm text-black-50">
               <FontAwesomeIcon
-                icon={['fas', 'star']}
+                icon={["fas", "star"]}
                 className="text-warning mr-1"
               />
               <span>4.5</span>
               <span className="px-1">|</span>
               23 Jobs
             </div>
-          </div>
+          </div> */}
         </div>
       </Card>
-      <Grid container spacing={4}>
+      {/* <Grid container spacing={4}>
         <Grid item xs={12} lg={7}>
           <Card className="card-box mb-4">
             <div className="card-header">
@@ -311,7 +311,8 @@ export default function LivePreviewExample() {
                     <Tooltip arrow title="View all participants">
                       <Button
                         color="primary"
-                        className="font-size-lg ml-3 d-40 p-0 rounded-circle border-0">
+                        className="font-size-lg ml-3 d-40 p-0 rounded-circle border-0"
+                      >
                         <AddCircleTwoToneIcon />
                       </Button>
                     </Tooltip>
@@ -353,7 +354,8 @@ export default function LivePreviewExample() {
                     <Tooltip arrow title="View all participants">
                       <Button
                         color="primary"
-                        className="font-size-lg ml-3 d-40 p-0 rounded-circle border-0">
+                        className="font-size-lg ml-3 d-40 p-0 rounded-circle border-0"
+                      >
                         <AddCircleTwoToneIcon />
                       </Button>
                     </Tooltip>
@@ -387,8 +389,8 @@ export default function LivePreviewExample() {
               </ListItem>
             </List>
           </Card>
-        </Grid>
-        <Grid item xs={12} lg={5}>
+        </Grid> */}
+      {/* <Grid item xs={12} lg={5}>
           <Card className="card-box mb-4">
             <div className="px-4 px-xl-5 pb-1">
               <div className="card-header d-block">
@@ -486,8 +488,8 @@ export default function LivePreviewExample() {
               </Tooltip>
             </div>
           </Card>
-        </Grid>
-      </Grid>
+        </Grid> */}
+      {/* </Grid> */}
     </Fragment>
   );
 }
