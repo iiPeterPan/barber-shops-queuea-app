@@ -118,17 +118,26 @@ export default function LivePreviewExample() {
             <CardContent className="p-3">
               <div className="d-flex align-items-start">
                 <div className="font-weight-bold">
-                  <small className="text-white-50 d-block mb-1 text-uppercase">
+                  <p
+                    className="text-white-50 d-block mb-1 text-uppercase"
+                    style={{ fontSize: "20px" }}
+                  >
                     คิวที่เหลือ
-                  </small>
-                  <span className="font-size-xxl mt-2">15</span>
+                  </p>
+                  {/* <span className="font-size-xxl mt-2">15</span> */}
                 </div>
                 <div className="ml-auto">
-                  <div className="bg-white text-center text-primary d-50 rounded-circle d-flex align-items-center justify-content-center">
-                    <FontAwesomeIcon
+                  <div className="font-weight-bold text-center d-50 d-flex align-items-center justify-content-center">
+                    <span
+                      className="font-size-xxl mt-2"
+                      style={{ fontSize: "50px" }}
+                    >
+                      15
+                    </span>
+                    {/* <FontAwesomeIcon
                       icon={["far", "user"]}
                       className="font-size-xl"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>

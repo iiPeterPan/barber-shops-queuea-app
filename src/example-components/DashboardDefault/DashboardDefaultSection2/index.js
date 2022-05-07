@@ -33,8 +33,8 @@ export default function LivePreviewExample() {
                   <th>เวลา</th>
                   <th className="text-center">ช่าง 1</th>
                   <th className="text-center">ช่าง 2</th>
-                  <th className="text-center">Progress</th>
-                  <th className="text-center">Actions</th>
+                  {/* <th className="text-center">Progress</th>
+                  <th className="text-center">Actions</th> */}
                 </tr>
               </thead>
               <tbody>
@@ -46,7 +46,7 @@ export default function LivePreviewExample() {
                   <td className="text-center">
                     <div className="badge badge-success px-4 w-100">ว่าง</div>
                   </td>
-                  <td>
+                  {/* <td>
                     <LinearProgress value={55} color="primary" />
                   </td>
                   <td className="text-center">
@@ -59,22 +59,20 @@ export default function LivePreviewExample() {
                         <FontAwesomeIcon icon={["fas", "arrow-right"]} />
                       </IconButton>
                     </Tooltip>
-                  </td>
+                  </td> */}
                 </tr>
                 <tr>
                   <td>13:00</td>
                   <td className="text-center">
-                    <div className="badge badge-danger px-4 w-100" w-100>
-                      จองแล้ว
-                    </div>
+                    <div className="badge badge-danger px-4 w-100">จองแล้ว</div>
                   </td>
                   <td className="text-center">
                     <div className="badge badge-warning px-4 w-100">ไม่รับ</div>
                   </td>
-                  <td>
+                  {/* <td>
                     <LinearProgress value={55} color="primary" />
-                  </td>
-                  <td className="text-center">
+                  </td> */}
+                  {/* <td className="text-center">
                     <Tooltip arrow title="View Details">
                       <IconButton
                         size="small"
@@ -84,7 +82,7 @@ export default function LivePreviewExample() {
                         <FontAwesomeIcon icon={["fas", "arrow-right"]} />
                       </IconButton>
                     </Tooltip>
-                  </td>
+                  </td> */}
                 </tr>
                 <tr>
                   <td>14:00</td>
@@ -94,7 +92,7 @@ export default function LivePreviewExample() {
                   <td className="text-center">
                     <div className="badge badge-danger px-4 w-100">จองแล้ว</div>
                   </td>
-                  <td>
+                  {/* <td>
                     <LinearProgress value={67} color="primary" />
                   </td>
                   <td className="text-center">
@@ -107,7 +105,7 @@ export default function LivePreviewExample() {
                         <FontAwesomeIcon icon={["fas", "arrow-right"]} />
                       </IconButton>
                     </Tooltip>
-                  </td>
+                  </td> */}
                 </tr>
                 {/* <tr>
                   <td>15:00</td>
