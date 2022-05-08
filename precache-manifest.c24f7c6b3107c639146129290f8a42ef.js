@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b50fdef58930cb792409a2cf9ba4a505",
+    "revision": "9f49ccd0bcf3c86abe17741ec5cbce73",
     "url": "/barber-shops-queuea-app/index.html"
   },
   {
-    "revision": "dadc5f047dfba91eae15",
+    "revision": "cd79f4da61f0535ac031",
     "url": "/barber-shops-queuea-app/static/css/main.d7776778.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/barber-shops-queuea-app/static/js/12.1e79bd59.chunk.js"
   },
   {
-    "revision": "959f797004bb0def71a6",
-    "url": "/barber-shops-queuea-app/static/js/13.a2b0dee5.chunk.js"
+    "revision": "2198f373a2b57a8b8f0e",
+    "url": "/barber-shops-queuea-app/static/js/13.dd1b4941.chunk.js"
   },
   {
     "revision": "723e5e5d8e21c7e1ce92",
@@ -52,12 +52,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/barber-shops-queuea-app/static/js/17.66534e70.chunk.js"
   },
   {
-    "revision": "32b1ad80456bfdc18ff1",
-    "url": "/barber-shops-queuea-app/static/js/4.594610a2.chunk.js"
+    "revision": "2b245260f5d80445dd7b",
+    "url": "/barber-shops-queuea-app/static/js/4.9ee61c9b.chunk.js"
   },
   {
     "revision": "ed13ec710bb4cabf44f1deaeade415d1",
-    "url": "/barber-shops-queuea-app/static/js/4.594610a2.chunk.js.LICENSE.txt"
+    "url": "/barber-shops-queuea-app/static/js/4.9ee61c9b.chunk.js.LICENSE.txt"
   },
   {
     "revision": "3467ad630462ac74870e",
@@ -80,16 +80,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/barber-shops-queuea-app/static/js/8.cdb7ac25.chunk.js"
   },
   {
-    "revision": "85a9d92935b08a4c1906",
-    "url": "/barber-shops-queuea-app/static/js/9.c5eeabcf.chunk.js"
+    "revision": "1d386c4e9f1b01666ec1",
+    "url": "/barber-shops-queuea-app/static/js/9.68383f5d.chunk.js"
   },
   {
-    "revision": "dadc5f047dfba91eae15",
-    "url": "/barber-shops-queuea-app/static/js/main.e2c46a68.chunk.js"
+    "revision": "cd79f4da61f0535ac031",
+    "url": "/barber-shops-queuea-app/static/js/main.481eb31a.chunk.js"
   },
   {
-    "revision": "1b75021e5d855a9354b6",
-    "url": "/barber-shops-queuea-app/static/js/runtime-main.5f318057.js"
+    "revision": "9dd877cf1e3be45c6ce5",
+    "url": "/barber-shops-queuea-app/static/js/runtime-main.9f66d1f1.js"
   },
   {
     "revision": "01798bc13e33afc36a52f2826638d386",
