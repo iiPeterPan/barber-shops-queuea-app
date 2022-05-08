@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/barber-shops-queuea-app/precache-manifest.c24f7c6b3107c639146129290f8a42ef.js"
+  "/barber-shops-queuea-app/precache-manifest.b0f8713573e2824192a6aca57b846181.js"
 );
 
 self.addEventListener('message', (event) => {

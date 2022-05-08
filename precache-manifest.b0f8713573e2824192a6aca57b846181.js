@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f49ccd0bcf3c86abe17741ec5cbce73",
+    "revision": "1ace68135b409300342f3d9a508aa33c",
     "url": "/barber-shops-queuea-app/index.html"
   },
   {
