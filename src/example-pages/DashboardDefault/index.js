@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 
 import { PageTitle } from "../../layout-components";
 
@@ -6,16 +6,107 @@ import DashboardDefaultSection1 from "../../example-components/DashboardDefault/
 import DashboardDefaultSection2 from "../../example-components/DashboardDefault/DashboardDefaultSection2";
 import DashboardDefaultSection3 from "../../example-components/DashboardDefault/DashboardDefaultSection3";
 import DashboardDefaultSection4 from "../../example-components/DashboardDefault/DashboardDefaultSection4";
+
+import { format, set } from "date-fns";
+
+import axios from "axios";
+
 export default function DashboardDefault() {
+  const [selectedDate, setSelectedDate] = React.useState(new Date());
+
+  const [queue, setQueue] = React.useState(0);
+
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  const [date, setDate] = React.useState(
+    format(new Date(), "dd/MM/yyyy").toString()
+  );
+
+  const [data, setData] = React.useState(null);
+
+  const [countQueue, setCountQueue] = React.useState(0);
+
+  const [emptyQueues, setEmptyQueues] = React.useState(false);
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+    setDate(format(date, "dd/MM/yyyy").toString());
+    fetchMyAPI(prosessDate(format(date, "dd/MM/yyyy").toString()));
+  };
+
+  const prosessDate = (dateStr) => {
+    const myArray = dateStr.split("/");
+    let date = myArray[0];
+    let month = myArray[1];
+    let year = myArray[2];
+    console.log(year + "-" + month + "-" + date);
+    return year + "-" + month + "-" + date;
+  };
+
+  const countQueues = (data) => {
+    let queue = 0;
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].ownerOne === "available") {
+        queue++;
+      }
+    }
+    console.log(queue);
+    return queue;
+  };
+
+  useEffect(() => {
+    fetchMyAPI(prosessDate(date));
+  }, []);
+
+  const fetchMyAPI = async (dateStr) => {
+    setIsLoading(true);
+    const url =
+      "https://union-made-queue-management.herokuapp.com/unionMade/api/getQueuesByData?" +
+      `date=${dateStr}`;
+
+    console.log(url);
+
+    const headers = {
+      headers: {
+        "Access-Control-Allow-Headers": "*",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "*",
+      },
+    };
+
+    await axios.get(url, null, headers).then((res) => {
+      setData(res.data);
+      if (res.data.length == 0) {
+        setEmptyQueues(true);
+      } else {
+        setEmptyQueues(false);
+      }
+      setCountQueue(countQueues(res.data));
+      console.log(res.data);
+    });
+    setIsLoading(false);
+  };
+
   return (
     <Fragment>
       {/* <PageTitle
         titleHeading="Default"
         titleDescription="This is a dashboard page example built using this template."
       /> */}
-      <DashboardDefaultSection1 />
-      <DashboardDefaultSection2 />
-      <DashboardDefaultSection3 />
+      <DashboardDefaultSection1
+        selectedDate={selectedDate}
+        handleDateChange={handleDateChange}
+        queue={queue}
+        date={date}
+        countQueue={countQueue}
+      />
+      <DashboardDefaultSection2
+        data={data}
+        isLoading={isLoading}
+        setIsLoading={setIsLoading}
+        emptyQueues={emptyQueues}
+      />
+      {/* <DashboardDefaultSection3 /> */}
       {/* <DashboardDefaultSection4 /> */}
     </Fragment>
   );

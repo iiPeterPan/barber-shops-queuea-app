@@ -1,6 +1,9 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
 
 import {
   IconButton,
@@ -11,7 +14,30 @@ import {
   Tooltip,
 } from "@material-ui/core";
 
-export default function LivePreviewExample() {
+import axios from "axios";
+
+const useStyles = makeStyles({
+  root: {
+    width: "100%",
+    maxWidth: 500,
+    paddingTop: "20%",
+    paddingLeft: "80%",
+    paddingBottom: "10%",
+  },
+  isLoading: {
+    paddingTop: "10%",
+    paddingLeft: "105%",
+    paddingBottom: "10%",
+  },
+});
+
+export default function LivePreviewExample(props) {
+  const classes = useStyles();
+
+  useEffect(() => {
+    console.log(props);
+  }, [props.data]);
+
   return (
     <Fragment>
       <Card className="card-box mb-4">
@@ -31,139 +57,69 @@ export default function LivePreviewExample() {
               <thead>
                 <tr>
                   <th>เวลา</th>
-                  <th className="text-center">ช่าง 1</th>
-                  <th className="text-center">ช่าง 2</th>
-                  {/* <th className="text-center">Progress</th>
-                  <th className="text-center">Actions</th> */}
+                  <th className="text-center">ช่าง เต๋อ</th>
                 </tr>
               </thead>
               <tbody>
+                {props.isLoading ? (
+                  <div className={classes.isLoading}>
+                    <CircularProgress />
+                  </div>
+                ) : props.emptyQueues ? (
+                  <div className={classes.root}>
+                    <Typography variant="h3" gutterBottom>
+                      ไม่มีคิว
+                    </Typography>
+                  </div>
+                ) : (
+                  props.data.map((obj, index) => {
+                    return (
+                      <tr>
+                        <td>{obj.queueTime}:00</td>
+                        <td className="text-center">
+                          {obj.ownerOne === "available" ? (
+                            <div className="badge badge-success px-4 w-100">
+                              ว่าง
+                            </div>
+                          ) : (
+                            <div className="badge badge-danger px-4 w-100">
+                              จองแล้ว
+                            </div>
+                          )}
+                        </td>
+                      </tr>
+                    );
+                  })
+                )}
+
+                {/* <tr>
+                  <td>11:00</td>
+                  <td className="text-center">
+                    <div className="badge badge-danger px-4 w-100">จองแล้ว</div>
+                  </td>
+                </tr>
                 <tr>
                   <td>12:00</td>
                   <td className="text-center">
                     <div className="badge badge-danger px-4 w-100">จองแล้ว</div>
                   </td>
-                  <td className="text-center">
-                    <div className="badge badge-success px-4 w-100">ว่าง</div>
-                  </td>
-                  {/* <td>
-                    <LinearProgress value={55} color="primary" />
-                  </td>
-                  <td className="text-center">
-                    <Tooltip arrow title="View Details">
-                      <IconButton
-                        size="small"
-                        variant="outlined"
-                        color="primary"
-                      >
-                        <FontAwesomeIcon icon={["fas", "arrow-right"]} />
-                      </IconButton>
-                    </Tooltip>
-                  </td> */}
                 </tr>
                 <tr>
                   <td>13:00</td>
                   <td className="text-center">
                     <div className="badge badge-danger px-4 w-100">จองแล้ว</div>
                   </td>
-                  <td className="text-center">
-                    <div className="badge badge-warning px-4 w-100">ไม่รับ</div>
-                  </td>
-                  {/* <td>
-                    <LinearProgress value={55} color="primary" />
-                  </td> */}
-                  {/* <td className="text-center">
-                    <Tooltip arrow title="View Details">
-                      <IconButton
-                        size="small"
-                        variant="outlined"
-                        color="primary"
-                      >
-                        <FontAwesomeIcon icon={["fas", "arrow-right"]} />
-                      </IconButton>
-                    </Tooltip>
-                  </td> */}
                 </tr>
                 <tr>
                   <td>14:00</td>
                   <td className="text-center">
                     <div className="px-4 badge badge-success w-100">ว่าง</div>
                   </td>
-                  <td className="text-center">
-                    <div className="badge badge-danger px-4 w-100">จองแล้ว</div>
-                  </td>
-                  {/* <td>
-                    <LinearProgress value={67} color="primary" />
-                  </td>
-                  <td className="text-center">
-                    <Tooltip arrow title="View Details">
-                      <IconButton
-                        size="small"
-                        variant="outlined"
-                        color="primary"
-                      >
-                        <FontAwesomeIcon icon={["fas", "arrow-right"]} />
-                      </IconButton>
-                    </Tooltip>
-                  </td> */}
-                </tr>
-                {/* <tr>
-                  <td>15:00</td>
-                  <td>
-                    <div>
-                      <a
-                        href="#/"
-                        onClick={(e) => e.preventDefault()}
-                        className="font-weight-bold text-black"
-                        title="..."
-                      >
-                        Beck Simpson
-                      </a>
-                      <span className="text-black-50 d-block">
-                        Frontend Developer
-                      </span>
-                    </div>
-                  </td>
-                  <td className="text-center">
-                    <div className="px-4 badge badge-success">Completed</div>
-                  </td>
-                  <td>
-                    <LinearProgress value={39} color="primary" />
-                  </td>
-                  <td className="text-center">
-                    <Tooltip arrow title="View Details">
-                      <IconButton
-                        size="small"
-                        variant="outlined"
-                        color="primary"
-                      >
-                        <FontAwesomeIcon icon={["fas", "arrow-right"]} />
-                      </IconButton>
-                    </Tooltip>
-                  </td>
                 </tr> */}
               </tbody>
             </table>
           </div>
         </CardContent>
-        {/* <div className="card-footer d-flex justify-content-between">
-          <Button color="primary" size="small">
-            Delete
-          </Button>
-          <div>
-            <Button
-              size="small"
-              variant="contained"
-              className="mr-3"
-              color="primary"
-            >
-              View all
-            </Button>
-            <Button size="small" variant="contained" color="secondary">
-              Add new entry
-            </Button>
-          </div>
-        </div> */}
       </Card>
     </Fragment>
   );
