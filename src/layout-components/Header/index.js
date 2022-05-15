@@ -22,6 +22,7 @@ import HeaderUserbox from "../../layout-components/HeaderUserbox";
 
 import MenuOpenRoundedIcon from "@material-ui/icons/MenuOpenRounded";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
+import Typography from "@material-ui/core/Typography";
 
 const Header = (props) => {
   const toggleSidebarMobile = () => {
@@ -49,18 +50,18 @@ const Header = (props) => {
               className="app-logo-wrapper"
               title="Carolina React Admin Dashboard with Material-UI Free"
             >
-              <Link to="/DashboardDefault" className="app-logo-link">
-                <IconButton color="primary" className="app-logo-btn">
-                  <img
-                    className="app-logo-img"
-                    alt="Carolina React Admin Dashboard with Material-UI Free"
-                    src="logo-barber-modified.png"
-                  />
-                </IconButton>
-              </Link>
-              <Hidden smDown>
-                <Box className="app-logo-text">UnionMade Barbershop</Box>
-              </Hidden>
+              <img
+                width="60"
+                height="60"
+                //className="app-logo-img"
+                alt="Carolina React Admin Dashboard with Material-UI Free"
+                src="logo-barber-modified.png"
+              />
+              <Box m={2}>
+                <Typography align="center" variant="h4">
+                  UnionMade Barbershop
+                </Typography>
+              </Box>
             </Box>
           </Hidden>
           {/* <Hidden mdDown>

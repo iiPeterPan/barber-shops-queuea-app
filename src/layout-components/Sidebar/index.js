@@ -1,33 +1,33 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
-import clsx from 'clsx';
+import clsx from "clsx";
 
-import PerfectScrollbar from 'react-perfect-scrollbar';
-import { Hidden, Drawer, Paper } from '@material-ui/core';
+import PerfectScrollbar from "react-perfect-scrollbar";
+import { Hidden, Drawer, Paper } from "@material-ui/core";
 
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 
-import SidebarHeader from '../../layout-components/SidebarHeader';
-import SidebarMenu from '../../layout-components/SidebarMenu';
+import SidebarHeader from "../../layout-components/SidebarHeader";
+import SidebarMenu from "../../layout-components/SidebarMenu";
 
-import navItems from './navItems';
+import navItems from "./navItems";
 
-import { setSidebarToggleMobile } from '../../reducers/ThemeOptions';
+import { setSidebarToggleMobile } from "../../reducers/ThemeOptions";
 
-const Sidebar = props => {
+const Sidebar = (props) => {
   const {
     setSidebarToggleMobile,
     sidebarToggleMobile,
     sidebarFixed,
 
-    sidebarShadow
+    sidebarShadow,
   } = props;
 
   const closeDrawer = () => setSidebarToggleMobile(!sidebarToggleMobile);
 
   const sidebarMenuContent = (
     <div>
-      {navItems.map(list => (
+      {navItems.map((list) => (
         <SidebarMenu
           component="div"
           key={list.label}
@@ -40,7 +40,7 @@ const Sidebar = props => {
 
   return (
     <Fragment>
-      <Hidden lgUp>
+      {/* <Hidden lgUp>
         <Drawer
           anchor="left"
           open={sidebarToggleMobile}
@@ -70,19 +70,19 @@ const Sidebar = props => {
             </PerfectScrollbar>
           </div>
         </Paper>
-      </Hidden>
+      </Hidden> */}
     </Fragment>
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   sidebarFixed: state.ThemeOptions.sidebarFixed,
   headerFixed: state.ThemeOptions.headerFixed,
-  sidebarToggleMobile: state.ThemeOptions.sidebarToggleMobile
+  sidebarToggleMobile: state.ThemeOptions.sidebarToggleMobile,
 });
 
-const mapDispatchToProps = dispatch => ({
-  setSidebarToggleMobile: enable => dispatch(setSidebarToggleMobile(enable))
+const mapDispatchToProps = (dispatch) => ({
+  setSidebarToggleMobile: (enable) => dispatch(setSidebarToggleMobile(enable)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Sidebar);
