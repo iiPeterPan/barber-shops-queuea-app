@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d1837f44967f6232eba5f131af87ece8",
+    "revision": "4f8c477679ba3fd79533a49aace04402",
     "url": "/barber-shops-queuea-app/index.html"
   },
   {
-    "revision": "618d07e8babc1069f6f7",
+    "revision": "317e7b693a389bbc71ea",
     "url": "/barber-shops-queuea-app/static/css/main.d7776778.chunk.css"
   },
   {
@@ -96,8 +96,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/barber-shops-queuea-app/static/js/9.fbc8802c.chunk.js"
   },
   {
-    "revision": "618d07e8babc1069f6f7",
-    "url": "/barber-shops-queuea-app/static/js/main.c0251e5f.chunk.js"
+    "revision": "317e7b693a389bbc71ea",
+    "url": "/barber-shops-queuea-app/static/js/main.df994c0e.chunk.js"
   },
   {
     "revision": "f2f6abbb190ed1d0c7f0",
