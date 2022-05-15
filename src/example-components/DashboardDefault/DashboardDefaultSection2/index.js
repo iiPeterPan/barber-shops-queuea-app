@@ -5,6 +5,8 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
+import RefreshIcon from "@material-ui/icons/Refresh";
+
 import {
   IconButton,
   LinearProgress,
@@ -38,17 +40,24 @@ export default function LivePreviewExample(props) {
     console.log(props);
   }, [props.data]);
 
+  const refresh = () => {
+    props.tableRefresh();
+  };
+
   return (
     <Fragment>
       <Card className="card-box mb-4">
         <div className="card-header pr-2">
           <div className="card-header--title">ตารางคิว</div>
           <div className="card-header--actions">
-            <Tooltip arrow title="Refresh">
+            <Button variant="outlined" color="primary" onClick={refresh}>
+              <RefreshIcon />
+            </Button>
+            {/* <Tooltip arrow title="Refresh">
               <IconButton size="small" color="primary" className="mr-3">
-                <FontAwesomeIcon icon={["fas", "cog"]} spin />
+                <FontAwesomeIcon icon={["fas", "arrow-alt-to-bottom"]} spin />
               </IconButton>
-            </Tooltip>
+            </Tooltip> */}
           </div>
         </div>
         <CardContent className="p-3">

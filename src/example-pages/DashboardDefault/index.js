@@ -87,6 +87,11 @@ export default function DashboardDefault() {
     setIsLoading(false);
   };
 
+  const tableRefresh = () => {
+    console.log("log");
+    fetchMyAPI(prosessDate(date));
+  };
+
   return (
     <Fragment>
       {/* <PageTitle
@@ -105,6 +110,7 @@ export default function DashboardDefault() {
         isLoading={isLoading}
         setIsLoading={setIsLoading}
         emptyQueues={emptyQueues}
+        tableRefresh={tableRefresh}
       />
       {/* <DashboardDefaultSection3 /> */}
       {/* <DashboardDefaultSection4 /> */}

@@ -130,7 +130,7 @@ const Routes = () => {
                       path="/DashboardDefault"
                       component={DashboardDefault}
                     />
-                    <Route path="/Buttons" component={Buttons} />
+                    {/* <Route path="/Buttons" component={Buttons} />
                     <Route path="/Dropdowns" component={Dropdowns} />
                     <Route
                       path="/NavigationMenus"
@@ -156,7 +156,7 @@ const Routes = () => {
                     <Route path="/FormsControls" component={FormsControls} />
                     <Route path="/ApexCharts" component={ApexCharts} />
                     <Route path="/Maps" component={Maps} />
-                    <Route path="/ListGroups" component={ListGroups} />
+                    <Route path="/ListGroups" component={ListGroups} /> */}
                   </motion.div>
                 </Switch>
               </LeftSidebar>

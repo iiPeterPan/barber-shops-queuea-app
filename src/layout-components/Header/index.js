@@ -51,8 +51,8 @@ const Header = (props) => {
               title="Carolina React Admin Dashboard with Material-UI Free"
             >
               <img
-                width="60"
-                height="60"
+                width="53"
+                height="53"
                 //className="app-logo-img"
                 alt="Carolina React Admin Dashboard with Material-UI Free"
                 src="logo-barber-modified.png"
