@@ -88,7 +88,6 @@ export default function DashboardDefault() {
   };
 
   const tableRefresh = () => {
-    console.log("log");
     fetchMyAPI(prosessDate(date));
   };
 
