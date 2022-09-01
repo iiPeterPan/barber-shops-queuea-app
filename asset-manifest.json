@@ -5,10 +5,10 @@
     "static/js/1.95971e69.chunk.js": "/barber-shops-queuea-app/static/js/1.95971e69.chunk.js",
     "static/js/1.95971e69.chunk.js.map": "/barber-shops-queuea-app/static/js/1.95971e69.chunk.js.map",
     "main.css": "/barber-shops-queuea-app/static/css/main.d7776778.chunk.css",
-    "main.js": "/barber-shops-queuea-app/static/js/main.df994c0e.chunk.js",
-    "main.js.map": "/barber-shops-queuea-app/static/js/main.df994c0e.chunk.js.map",
-    "runtime-main.js": "/barber-shops-queuea-app/static/js/runtime-main.852e4b48.js",
-    "runtime-main.js.map": "/barber-shops-queuea-app/static/js/runtime-main.852e4b48.js.map",
+    "main.js": "/barber-shops-queuea-app/static/js/main.c0251e5f.chunk.js",
+    "main.js.map": "/barber-shops-queuea-app/static/js/main.c0251e5f.chunk.js.map",
+    "runtime-main.js": "/barber-shops-queuea-app/static/js/runtime-main.6a92846b.js",
+    "runtime-main.js.map": "/barber-shops-queuea-app/static/js/runtime-main.6a92846b.js.map",
     "static/js/4.a9648c44.chunk.js": "/barber-shops-queuea-app/static/js/4.a9648c44.chunk.js",
     "static/js/4.a9648c44.chunk.js.map": "/barber-shops-queuea-app/static/js/4.a9648c44.chunk.js.map",
     "static/js/5.7ea21655.chunk.js": "/barber-shops-queuea-app/static/js/5.7ea21655.chunk.js",
@@ -29,8 +29,8 @@
     "static/js/12.0598fabc.chunk.js.map": "/barber-shops-queuea-app/static/js/12.0598fabc.chunk.js.map",
     "static/js/13.0dcaae19.chunk.js": "/barber-shops-queuea-app/static/js/13.0dcaae19.chunk.js",
     "static/js/13.0dcaae19.chunk.js.map": "/barber-shops-queuea-app/static/js/13.0dcaae19.chunk.js.map",
-    "static/js/14.220072ef.chunk.js": "/barber-shops-queuea-app/static/js/14.220072ef.chunk.js",
-    "static/js/14.220072ef.chunk.js.map": "/barber-shops-queuea-app/static/js/14.220072ef.chunk.js.map",
+    "static/js/14.41e6bdeb.chunk.js": "/barber-shops-queuea-app/static/js/14.41e6bdeb.chunk.js",
+    "static/js/14.41e6bdeb.chunk.js.map": "/barber-shops-queuea-app/static/js/14.41e6bdeb.chunk.js.map",
     "static/js/15.4a3fe3f1.chunk.js": "/barber-shops-queuea-app/static/js/15.4a3fe3f1.chunk.js",
     "static/js/15.4a3fe3f1.chunk.js.map": "/barber-shops-queuea-app/static/js/15.4a3fe3f1.chunk.js.map",
     "static/js/16.370727bf.chunk.js": "/barber-shops-queuea-app/static/js/16.370727bf.chunk.js",
@@ -42,7 +42,7 @@
     "static/js/19.436cd278.chunk.js": "/barber-shops-queuea-app/static/js/19.436cd278.chunk.js",
     "static/js/19.436cd278.chunk.js.map": "/barber-shops-queuea-app/static/js/19.436cd278.chunk.js.map",
     "index.html": "/barber-shops-queuea-app/index.html",
-    "precache-manifest.3e4561079d56939f8b520678bd91693e.js": "/barber-shops-queuea-app/precache-manifest.3e4561079d56939f8b520678bd91693e.js",
+    "precache-manifest.33f9411045cd7765d25b8db8b6565c02.js": "/barber-shops-queuea-app/precache-manifest.33f9411045cd7765d25b8db8b6565c02.js",
     "service-worker.js": "/barber-shops-queuea-app/service-worker.js",
     "static/css/main.d7776778.chunk.css.map": "/barber-shops-queuea-app/static/css/main.d7776778.chunk.css.map",
     "static/js/0.98025041.chunk.js.LICENSE.txt": "/barber-shops-queuea-app/static/js/0.98025041.chunk.js.LICENSE.txt",
@@ -58,9 +58,9 @@
     "static/media/stock-3.jpg": "/barber-shops-queuea-app/static/media/stock-3.257f5bc0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.852e4b48.js",
+    "static/js/runtime-main.6a92846b.js",
     "static/js/4.a9648c44.chunk.js",
     "static/css/main.d7776778.chunk.css",
-    "static/js/main.df994c0e.chunk.js"
+    "static/js/main.c0251e5f.chunk.js"
   ]
 }

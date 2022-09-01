@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4f8c477679ba3fd79533a49aace04402",
+    "revision": "4d4c1c4c1ecc246bf364a07127278047",
     "url": "/barber-shops-queuea-app/index.html"
   },
   {
-    "revision": "317e7b693a389bbc71ea",
+    "revision": "618d07e8babc1069f6f7",
     "url": "/barber-shops-queuea-app/static/css/main.d7776778.chunk.css"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/barber-shops-queuea-app/static/js/13.0dcaae19.chunk.js"
   },
   {
-    "revision": "2d3f283f5a575b859861",
-    "url": "/barber-shops-queuea-app/static/js/14.220072ef.chunk.js"
+    "revision": "c6fa9f86935c18204bee",
+    "url": "/barber-shops-queuea-app/static/js/14.41e6bdeb.chunk.js"
   },
   {
     "revision": "65767fd6175309715461",
@@ -96,12 +96,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/barber-shops-queuea-app/static/js/9.fbc8802c.chunk.js"
   },
   {
-    "revision": "317e7b693a389bbc71ea",
-    "url": "/barber-shops-queuea-app/static/js/main.df994c0e.chunk.js"
+    "revision": "618d07e8babc1069f6f7",
+    "url": "/barber-shops-queuea-app/static/js/main.c0251e5f.chunk.js"
   },
   {
-    "revision": "f2f6abbb190ed1d0c7f0",
-    "url": "/barber-shops-queuea-app/static/js/runtime-main.852e4b48.js"
+    "revision": "ea868c2e7b78bba6ecad",
+    "url": "/barber-shops-queuea-app/static/js/runtime-main.6a92846b.js"
   },
   {
     "revision": "01798bc13e33afc36a52f2826638d386",
