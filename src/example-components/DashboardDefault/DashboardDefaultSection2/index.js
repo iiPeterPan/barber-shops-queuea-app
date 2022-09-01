@@ -62,7 +62,7 @@ export default function LivePreviewExample(props) {
         </div>
         <CardContent className="p-3">
           <div className="table-responsive">
-            <table className="table table-borderless table-hover text-nowrap mb-0">
+            <table className="table table-borderless text-nowrap mb-0">
               <thead>
                 <tr>
                   <th>เวลา</th>
