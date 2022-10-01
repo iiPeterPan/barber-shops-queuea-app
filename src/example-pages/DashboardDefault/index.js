@@ -11,10 +11,19 @@ import { format, set } from "date-fns";
 
 import axios from "axios";
 
+import Button from "@material-ui/core/Button";
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+
 export default function DashboardDefault() {
   const [selectedDate, setSelectedDate] = React.useState(new Date());
 
   const [queue, setQueue] = React.useState(0);
+
+  const [isDialogOpen, setIsDialogOpen] = React.useState(true);
 
   const [isLoading, setIsLoading] = React.useState(true);
 
@@ -41,6 +50,10 @@ export default function DashboardDefault() {
     let year = myArray[2];
     console.log(year + "-" + month + "-" + date);
     return year + "-" + month + "-" + date;
+  };
+
+  const handleClose = () => {
+    setIsDialogOpen(false);
   };
 
   const countQueues = (data) => {
@@ -113,6 +126,27 @@ export default function DashboardDefault() {
       />
       {/* <DashboardDefaultSection3 /> */}
       {/* <DashboardDefaultSection4 /> */}
+
+      <Dialog
+        fullWidth={"md"}
+        onClose={handleClose}
+        aria-labelledby="simple-dialog-title"
+        open={isDialogOpen}
+      >
+        <DialogTitle id="alert-dialog-title">
+          {"UnionMade Barbershop"}
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            ใช้สำหรับดูคิวเท่านั้น ไม่สามารถจองคิวออนไลน์ได้
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color="primary" autoFocus>
+            ตกลง
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Fragment>
   );
 }
