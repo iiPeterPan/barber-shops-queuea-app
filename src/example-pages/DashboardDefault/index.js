@@ -63,6 +63,11 @@ export default function DashboardDefault() {
         queue++;
       }
     }
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].ownerTwo === "available") {
+        queue++;
+      }
+    }
     console.log(queue);
     return queue;
   };

@@ -67,6 +67,7 @@ export default function LivePreviewExample(props) {
                 <tr>
                   <th>เวลา</th>
                   <th className="text-center">ช่าง เต๋อ</th>
+                  <th className="text-center">ช่าง ไปร์ท</th>
                 </tr>
               </thead>
               <tbody>
@@ -88,7 +89,18 @@ export default function LivePreviewExample(props) {
                         <td className="text-center">
                           {obj.ownerOne === "available" ? (
                             <div className="badge badge-success px-4 w-100">
-                              ว่าง
+                              &nbsp; &nbsp; ว่าง &nbsp; &nbsp;
+                            </div>
+                          ) : (
+                            <div className="badge badge-danger px-4 w-100">
+                              จองแล้ว
+                            </div>
+                          )}
+                        </td>
+                        <td className="text-center">
+                          {obj.ownerTwo === "available" ? (
+                            <div className="badge badge-success px-4 w-100">
+                              &nbsp; &nbsp; ว่าง &nbsp; &nbsp;
                             </div>
                           ) : (
                             <div className="badge badge-danger px-4 w-100">
